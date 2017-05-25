@@ -15,16 +15,22 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="我们在做动力学模拟的时候，经常发现蛋白质晶体结构中缺失loop，这是因为在蛋白质晶体结构解析的过程中，柔性较高的loop无法准确测定所导致的。下面我们将使用chimera+modeller来补缺丢失的残基。">
+<meta name="keywords" content="chimera">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/05/25/hello-world/index.html">
+<meta property="og:title" content="使用chimera+modeller补全残基">
+<meta property="og:url" content="http://yoursite.com/2016/04/15/使用chimera-modeller补全残基/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:updated_time" content="2017-05-21T12:29:35.135Z">
+<meta property="og:description" content="我们在做动力学模拟的时候，经常发现蛋白质晶体结构中缺失loop，这是因为在蛋白质晶体结构解析的过程中，柔性较高的loop无法准确测定所导致的。下面我们将使用chimera+modeller来补缺丢失的残基。">
+<meta property="og:image" content="http://yoursite.com/img/使用chimera+modeller补全残基/model%201.jpg">
+<meta property="og:image" content="http://yoursite.com/img/使用chimera+modeller补全残基/model%202.jpg">
+<meta property="og:image" content="http://yoursite.com/img/使用chimera+modeller补全残基/model%203.jpg">
+<meta property="og:image" content="http://yoursite.com/img/使用chimera+modeller补全残基/model%204.jpg">
+<meta property="og:updated_time" content="2016-04-15T03:18:52.326Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="使用chimera+modeller补全残基">
+<meta name="twitter:description" content="我们在做动力学模拟的时候，经常发现蛋白质晶体结构中缺失loop，这是因为在蛋白质晶体结构解析的过程中，柔性较高的loop无法准确测定所导致的。下面我们将使用chimera+modeller来补缺丢失的残基。">
+<meta name="twitter:image" content="http://yoursite.com/img/使用chimera+modeller补全残基/model%201.jpg">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -56,7 +62,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Hello World | Hexo</title>
+<title>使用chimera+modeller补全残基 | Hexo</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -256,11 +262,11 @@
     </div>
     <link class="menu-list" tags="標籤" friends="友情鏈接" about="關於我"/>
 </nav>
-      <div class="body-wrap"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-使用chimera-modeller补全残基" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/05/25/hello-world/" class="article-date">
-      <time datetime="2017-05-25T13:41:19.564Z" itemprop="datePublished">2017-05-25</time>
+      <a href="/2016/04/15/使用chimera-modeller补全残基/" class="article-date">
+      <time datetime="2016-04-15T02:36:02.000Z" itemprop="datePublished">2016-04-15</time>
 </a>
 
 
@@ -275,7 +281,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      使用chimera+modeller补全残基
     </h1>
   
 
@@ -285,6 +291,10 @@
         
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/chimera/">chimera</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -292,15 +302,16 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p>我们在做动力学模拟的时候，经常发现蛋白质晶体结构中缺失loop，这是因为在蛋白质晶体结构解析的过程中，柔性较高的loop无法准确测定所导致的。下面我们将使用chimera+modeller来补缺丢失的残基。<a id="more"></a><br>软件：chimera，modeller最新版<br>材料：缺失loop区的蛋白质晶体结构，蛋白质完整序列（fasta格式）</p>
+<p>方法：1.打开chimera，载入pdb文件，可以看到loop区结构缺失,红色标记部分。见下图<br><img src="/img/使用chimera+modeller补全残基/model 1.jpg" alt="图1"></p>
+<p>2.载入fasta序列，如下图所示。<br><img src="/img/使用chimera+modeller补全残基/model 2.jpg" alt="图2"></p>
+<p>3.点击序列界面中的structure，选择modeller（loop/refinement），按照下图所示的方法设置，然后点击apply。从设置好的生成路径中选择B99990001.pdb即可。</p>
+<p><img src="/img/使用chimera+modeller补全残基/model 3.jpg" alt="图3"></p>
+<p><img src="/img/使用chimera+modeller补全残基/model 4.jpg" alt="图4"></p>
+<hr>
+<h1 id="注：以上使用了web和local两种方法来补全残基，发现有差别，但整体差别可以忽略不计。其中，local可以在本地文件中直接找到，而web中的本地文件只是残缺部分。故推荐使用local法。除使用本方法外，还可以使用Schrodinger中的蛋白准备来补缺残基"><a href="#注：以上使用了web和local两种方法来补全残基，发现有差别，但整体差别可以忽略不计。其中，local可以在本地文件中直接找到，而web中的本地文件只是残缺部分。故推荐使用local法。除使用本方法外，还可以使用Schrodinger中的蛋白准备来补缺残基" class="headerlink" title="注：以上使用了web和local两种方法来补全残基，发现有差别，但整体差别可以忽略不计。其中，local可以在本地文件中直接找到，而web中的本地文件只是残缺部分。故推荐使用local法。除使用本方法外，还可以使用Schrodinger中的蛋白准备来补缺残基"></a><strong>注：以上使用了web和local两种方法来补全残基，发现有差别，但整体差别可以忽略不计。其中，local可以在本地文件中直接找到，而web中的本地文件只是残缺部分。故推荐使用local法。除使用本方法外，还可以使用Schrodinger中的蛋白准备来补缺残基</strong></h1><blockquote>
+<p>本文参考借鉴了BioMS阿里原创教程“巧用chimera1.7进行晶体结构缺失部分的修补”。</p>
+</blockquote>
 
       
     </div>
@@ -309,13 +320,13 @@
   
     
     <div class="copyright">
-        <p><span>本文標題:</span><a href="/2017/05/25/hello-world/">Hello World</a></p>
+        <p><span>本文標題:</span><a href="/2016/04/15/使用chimera-modeller补全残基/">使用chimera+modeller补全残基</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主頁">John Doe</a></p>
-        <p><span>發布時間:</span>2017-05-25, 21:41:19</p>
-        <p><span>最後更新:</span>2017-05-21, 20:29:35</p>
+        <p><span>發布時間:</span>2016-04-15, 10:36:02</p>
+        <p><span>最後更新:</span>2016-04-15, 11:18:52</p>
         <p>
-            <span>原始鏈接:</span><a class="post-url" href="/2017/05/25/hello-world/" title="Hello World">http://yoursite.com/2017/05/25/hello-world/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/05/25/hello-world/　　作者: John Doe" title="點擊複製文章鏈接"><i class="fa fa-clipboard"></i></span>
+            <span>原始鏈接:</span><a class="post-url" href="/2016/04/15/使用chimera-modeller补全残基/" title="使用chimera+modeller补全残基">http://yoursite.com/2016/04/15/使用chimera-modeller补全残基/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/04/15/使用chimera-modeller补全残基/　　作者: John Doe" title="點擊複製文章鏈接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -327,10 +338,16 @@
 
     <nav id="article-nav">
         
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2016/05/16/R软件包的安装/">
+                    R中包的安装
+                </a>
+            </div>
+        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2017/05/12/小分子与蛋白体外相互作用测定方法/">
-                    小分子与蛋白体外相互作用测定方法
+                <a href="/2016/04/13/Markdown语法示例/">
+                    Markdown语法示例
                 </a>
             </div>
         
@@ -342,7 +359,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目錄</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#注：以上使用了web和local两种方法来补全残基，发现有差别，但整体差别可以忽略不计。其中，local可以在本地文件中直接找到，而web中的本地文件只是残缺部分。故推荐使用local法。除使用本方法外，还可以使用Schrodinger中的蛋白准备来补缺残基"><span class="toc-number">1.</span> <span class="toc-text">注：以上使用了web和local两种方法来补全残基，发现有差别，但整体差别可以忽略不计。其中，local可以在本地文件中直接找到，而web中的本地文件只是残缺部分。故推荐使用local法。除使用本方法外，还可以使用Schrodinger中的蛋白准备来补缺残基</span></a></li></ol>
         
     </div>
     <style>
@@ -378,7 +395,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"Hello World　| Hexo　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"使用chimera+modeller补全残基　| Hexo　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -398,13 +415,15 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="回到主頁"><i class="fa fa-home"></i></a>
+            <a href="/2016/05/16/R软件包的安装/" title="上一篇: R中包的安装">
+                <i class="fa fa-angle-left"></i>
+            </a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2017/05/12/小分子与蛋白体外相互作用测定方法/" title="下一篇: 小分子与蛋白体外相互作用测定方法">
+            <a href="/2016/04/13/Markdown语法示例/" title="下一篇: Markdown语法示例">
                 <i class="fa fa-angle-right"></i>
             </a>
         

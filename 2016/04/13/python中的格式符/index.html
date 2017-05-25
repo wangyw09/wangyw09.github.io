@@ -15,12 +15,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2017/05/index.html">
+<meta name="description" content="%s    字符串 (采用str()的显示) %r    字符串 (采用repr()的显示)">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python中的格式符">
+<meta property="og:url" content="http://yoursite.com/2016/04/13/python中的格式符/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="%s    字符串 (采用str()的显示) %r    字符串 (采用repr()的显示)">
+<meta property="og:updated_time" content="2016-04-13T02:29:33.182Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="python中的格式符">
+<meta name="twitter:description" content="%s    字符串 (采用str()的显示) %r    字符串 (采用repr()的显示)">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -52,7 +57,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Archives: 2017/5 | Hexo</title>
+<title>python中的格式符 | Hexo</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -62,8 +67,8 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
-        isArchive: true,
+        isPost: true,
+        isArchive: false,
         isTag: false,
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
@@ -252,85 +257,192 @@
     </div>
     <link class="menu-list" tags="標籤" friends="友情鏈接" about="關於我"/>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-python中的格式符" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2017/05/25/hello-world/" class="archive-article-date">
-      <time datetime="2017-05-25T13:41:19.564Z" itemprop="datePublished">05-25</time>
+    <div class="article-meta">
+      <a href="/2016/04/13/python中的格式符/" class="article-date">
+      <time datetime="2016-04-13T02:21:13.000Z" itemprop="datePublished">2016-04-13</time>
 </a>
 
 
-        </div>
-         
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/25/hello-world/">Hello World</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      python中的格式符
     </h1>
   
 
-        <div class="article-info info-on-archive">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2017/05/12/小分子与蛋白体外相互作用测定方法/" class="archive-article-date">
-      <time datetime="2017-05-12T09:20:21.000Z" itemprop="datePublished">05-12</time>
-</a>
-
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/12/小分子与蛋白体外相互作用测定方法/">小分子与蛋白体外相互作用测定方法</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-
-          
+        
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Drug/">Drug</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
     </div>
 
-        </div>
         <div class="clearfix"></div>
-    </header>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>%s    字符串 (采用str()的显示)</p>
+<p>%r    字符串 (采用repr()的显示)<br><a id="more"></a><br>%c    单个字符</p>
+<p>%b    二进制整数</p>
+<p>%d    十进制整数</p>
+<p>%i    十进制整数</p>
+<p>%o    八进制整数</p>
+<p>%x    十六进制整数</p>
+<p>%e    指数 (基底写为e)</p>
+<p>%E    指数 (基底写为E)</p>
+<p>%f    浮点数</p>
+<p>%F    浮点数，与上相同</p>
+<p>%g    指数(e)或浮点数 (根据显示长度)</p>
+<p>%G    指数(E)或浮点数 (根据显示长度)</p>
+<p>%%    字符”%”</p>
+<p><code>%[(name)][flags][width].[precision]typecode</code></p>
+<p>(name)为命名</p>
+<p>flags可以有+,-,’ ‘或0。+表示右对齐。-表示左对齐。’ ‘为一个空格，表示在正数的左侧填充一个空格，从而与负数对齐。0表示使用0填充。</p>
+<p>width表示显示宽度</p>
+<p>precision表示小数点后精度</p>
+<p>example:</p>
+<pre><code>print(&quot;%6.3f&quot; % 2.3)
+</code></pre>
+      
+    </div>
+    
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文標題:</span><a href="/2016/04/13/python中的格式符/">python中的格式符</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主頁">John Doe</a></p>
+        <p><span>發布時間:</span>2016-04-13, 10:21:13</p>
+        <p><span>最後更新:</span>2016-04-13, 10:29:33</p>
+        <p>
+            <span>原始鏈接:</span><a class="post-url" href="/2016/04/13/python中的格式符/" title="python中的格式符">http://yoursite.com/2016/04/13/python中的格式符/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/04/13/python中的格式符/　　作者: John Doe" title="點擊複製文章鏈接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>許可協議:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"姓名標示-非商業性-相同方式分享 4.0 國際"</a> 轉載請保留原文鏈接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2016/04/13/centos7安装Nvidia显卡驱动/">
+                    centos7安装Nvidia显卡驱动
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/04/13/python中类的特殊方法/">
+                    python中类的特殊方法
+                </a>
+            </div>
+        
+    </nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目錄</strong>
+        
+            
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隱藏目錄"  title="點擊按鈕隱藏或者顯示文章目錄">
+
+    <script>
+        yiliaConfig.toc = ["隱藏目錄", "顯示目錄", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"python中的格式符　| Hexo　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
 
     
 
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2016/04/13/centos7安装Nvidia显卡驱动/" title="上一篇: centos7安装Nvidia显卡驱动">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2016/04/13/python中类的特殊方法/" title="下一篇: python中类的特殊方法">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/05/25/hello-world/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/12/小分子与蛋白体外相互作用测定方法/">小分子与蛋白体外相互作用测定方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/03/通过Zika-Virus的ZS5结构发现MTase抑制剂/">通过Zika-Virus的ZS5结构域发现MTase抑制剂</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/03/通过绝对结合自由能预测配体选择性/">通过绝对结合自由能预测配体选择性</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/07/斯巴达克斯/">斯巴达克斯</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/03/PaDEL软件使用/">PaDEL软件使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/03/生物实验室常用生物化学类英语/">生物实验室常用生物化学类英语</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/03/生物实验室中常见化学试剂的英文名称/">生物实验室中常见化学试剂的英文名称</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/03/生物实验室中常见仪器的英文名称/">生物实验室中常见仪器的英文名称</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/03/生物实验室中实验操作的英文名称/">生物实验室中实验操作的英文名称</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/03/生物实验室常见耗材、仪器、操作、试剂英文名称/">生物实验室常见耗材英文名称</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/01/我上了985, 211, 才发现自己一无所有-或者, 也不能这么说/">我上了985, 211, 才发现自己一无所有-或者, 也不能这么说</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/29/狗日的中年/">狗日的中年</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/28/机器学习之分类器性能指标值ROC曲线、AUC值/">机器学习之分类器性能指标值ROC曲线、AUC值</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/26/《定风波·三月七日》/">《定风波·三月七日》</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/26/20种氨基酸的疏水性/">20种氨基酸的疏水性</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/20/TRIzol-RNA提取方法/">TRIzol RNA提取方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/20/药物化学训练问题重重/">药物化学训练问题重重</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/22/中药学数据库/">中药学数据库</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/R绘图基础之高级绘图函数/">R绘图基础之高级绘图函数</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/R绘图基础之低级绘图函数/">R绘图基础之低级绘图函数</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/R软件包的安装/">R中包的安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/15/使用chimera-modeller补全残基/">使用chimera+modeller补全残基</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/13/Markdown语法示例/">Markdown语法示例</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/13/windows中运行中常需输入的命令/">windows中运行中常需输入的命令</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/13/Centos6-6安装Nvidia显卡驱动/">Centos6.6安装Nvidia显卡驱动</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/13/centos7安装Nvidia显卡驱动/">centos7安装Nvidia显卡驱动</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/13/python中的格式符/">python中的格式符</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/13/python中类的特殊方法/">python中类的特殊方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/12/20种氨基酸单字母和三字母表示/">20种氨基酸单字母和三字母表示</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/12/照片/">照片</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/04/12/兰州大学/">兰州大学</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
